@@ -5,9 +5,9 @@
 # -----------------------------
 
 # --- CONFIGURATION ---
-GITHUB_USERNAME="YourUsername"
+GITHUB_USERNAME="web4application"
 REPO_NAME="SERAI"
-GITHUB_URL="https://github.com/$GITHUB_USERNAME/$REPO_NAME.git"
+GITHUB_URL="https://github.com/Web4application/SERAI.git"
 PYTHON_VERSION="3.11"
 
 # --- INIT GIT ---
@@ -43,9 +43,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v6
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5.11
       with:
         python-version: $PYTHON_VERSION
     - name: Install dependencies
