@@ -1,22 +1,26 @@
+# SERAI Monorepo
 
-# MultiPlatform AI & Cloud Project
+**SERAI** = System of Extensions & Realities + AI Intelligence
 
-This project contains multiple modules across Swift (iOS), Java, PHP, and Python for AI, streaming, and database operations. Each module is independent but together forms a full-stack solution.
+This monorepo contains the full ecosystem of SERAI, including:
+- Core runtime (`core/`)
+- Extensions (`extensions/`) like .xlsl, .aurl, .qntl
+- AI reasoning engine (`ai/`)
+- Teleportation & physics modules (`teleport/`)
+- Blockchain/distributed ledger (`blockchain/`)
+- Developer tools & UI (`ui/`)
+- Documentation (`docs/`)
+- Examples (`examples/`)
+- Tests (`tests/`)
 
-## Swift (iOS) Modules
-CloudKitSync.swift and SimpleModelTests.swift handle iCloud storage and ML model testing.
+## Getting Started
+- Clone this repository
+- Explore `extensions/` for all SERAI formats
+- Use `core/` to bootstrap runtime
+- Check `docs/` for specifications and guidelines
 
-## Java Streaming Modules
-Query9Model.java and SessionSideInputJoinModel.java simulate auction bids and session-based events.
+**Invented and maintained by Seriki Yakub (KUBU LEE).**
 
-## PHP Backend
-TemplateModel.php manages export templates in MySQL.
-
-## Python ML Module
-model.py trains a Keras neural network from CSV data.
-
-## Usage Notes
-- Swift → Xcode
-- Java → Java 11+
-- PHP → PHP 8+ and MySQL
-- Python → TensorFlow, pandas, numpy, scikit-learn
+## Central Workbook
+- `extensions/Aura.xlsx` is the main research workbook
+- Integrates all modules, extensions, and teleportation simulations
