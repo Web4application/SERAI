@@ -1,1 +1,25 @@
+ name: Python CI  
+on:
+[push, pull_request]
+ jobs:  
+ build:  
+ runs-on: ubuntu-latest  
+ steps:  
+ - uses: actions/checkout@v3  
+ - name: Set up Python  
+   uses: actions/setup-python@v4  
+   with:  
+     python-version: $PYTHON_VERSION  
+ - name: Install dependencies  
+   run: pip install openpyxl pandas  
+ - name: Test scripts  
+   run: |  
+     python ai/engine.py  
+     python teleport/teleport_sim.py  
+EOL  
 
+ git add .github/workflows/python.yml  
+ git commit -m "Add GitHub Actions CI workflow"  
+ git push origin main  
+
+echo "â�� SERAI GitHub setup complete!"  
